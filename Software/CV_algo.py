@@ -5,7 +5,7 @@ import numpy as np
 
 #TODO: NEED TO WORK ON THE SETTINGS REGARDING LANGUAGE AND SPEED
 
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe' #!FOR TESTING SHOULD BE UNNECESSARY WITH LINUX
+#pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe' #!FOR TESTING SHOULD BE UNNECESSARY WITH LINUX
 
 #----------------------------------------------------------------Read in image----------------------------------------------------------------
 img = cv2.imread('/home/pi/Pictures/test.jpg')
