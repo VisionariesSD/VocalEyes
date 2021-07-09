@@ -2,6 +2,7 @@ from picamera import PiCamera
 import time
 import subprocess
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
+import led
 
 #DEFINE BUTTONS:
 Capture_Button = 11
@@ -19,9 +20,10 @@ time.sleep(2)
 
 while True: # Run forever
     #When the button is pressed take a picture and call the comp vision algorithm to process it.
-    if GPIO.input(Capture_Button) == GPIO.HIGH:
+    if GPIO.input(Capture_Button) == True:
         #print("Button was pushed!")
-        time.sleep(1)
+        time.sleep(0.5)
         camera.capture("/home/pi/Pictures/test.jpg")
         print("Picture Captured")
-        #subprocess.call('python /home/pi/CV_algo.py', shell = True)
+        led.blink()
+        subprocess.call('python3 /home/pi/CV_algo.py', shell = True)
