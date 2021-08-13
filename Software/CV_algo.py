@@ -4,7 +4,7 @@ import pytesseract                     #FOR IMAGE PROCESSING
 import subprocess                      #TO CALL PROCESSES AND RUN THEM AS A THREAD
 import time                            #USED TO REMOVE MULTIPLE INTERRUPT CAlLS ON SINGLE BUTTON PRESS 
 from googletrans import Translator     #FOR CONVERSION BETWEEN LANGUAGES
-#import led                             #VISUAL CUE FOR TESTING
+#import led                            #VISUAL CUE FOR TESTING
 import pygame                          #AUDIO CUES FOR THE USER   
 
 
@@ -82,7 +82,7 @@ def CV(l):
     #pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe' #!FOR TESTING SHOULD BE UNNECESSARY WITH LINUX
 
     #----------------------------------------------------------------Read in image----------------------------------------------------------------
-    img = cv2.imread('/home/pi/Pictures/cnn.png')
+    img = cv2.imread('/home/pi/Pictures/input.png')
     #img = cv2.imread('skew.jpg')  #!FOR TESTING
 
     #-----------------------------------------------------Perform preprocessing of the image------------------------------------------------------

@@ -1,0 +1,64 @@
+\hypertarget{camera_8py}{}\doxysection{Hardware/camera.py File Reference}
+\label{camera_8py}\index{Hardware/camera.py@{Hardware/camera.py}}
+
+
+This is the script that serves as the driver for the full camera functionality as well as the picture-\/to-\/audio processing.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecamera}{camera}}
+\item 
+ \mbox{\hyperlink{namespacepicamera}{picamera}}
+\begin{DoxyCompactList}\small\item\em this package is used to startup the camera from code \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_r_pi_1_1_g_p_i_o}{RPi.\+GPIO}}
+\begin{DoxyCompactList}\small\item\em Import Raspberry Pi \mbox{\hyperlink{namespace_r_pi_1_1_g_p_i_o}{GPIO}} library to be used to identify and use pins within Raspberry Pi. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceled}{led}}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{led_8py}{led.\+py}} script located within Software that was used for testing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_c_v__algo}{CV\+\_\+algo}}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{_c_v__algo_8py}{CV\+\_\+algo.\+py}} script located within Software that is imported to allow use of its various functions. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacetime}{time}}
+\begin{DoxyCompactList}\small\item\em This packaged is mostly used for button debouncing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecamera_adfa074f1fc13a02bc5b8c64d0dc8829d}{camera.\+Lang\+Change}} (lang\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Changes the index of the lang\+\_\+index variable for the languages array (located in \mbox{\hyperlink{_c_v__algo_8py}{CV\+\_\+algo.\+py}}) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacecamera_aad9c2f2a6d2cd6652d82bba6fa298442}{camera.\+Speed\+\_\+\+Button}} (channel)
+\begin{DoxyCompactList}\small\item\em Changes the value of the spd\+\_\+ind variable for the spd\+\_\+arr array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacecamera_a7980f710293f0f0340f6c74109e3d1b8}{camera.\+Capture\+\_\+\+Button}} = 11
+\begin{DoxyCompactList}\small\item\em Pin 11 on Board = Capture/\+Start Button. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_a5e806212fb531329fdea0fefd4ead3af}{camera.\+Lang\+\_\+\+Change\+\_\+\+Button}} = 18
+\begin{DoxyCompactList}\small\item\em Pin 18 on Board = change language button. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_a1c9555d70d0722e233b13a07eefac801}{camera.\+Button\+\_\+\+Pause}} = 13
+\begin{DoxyCompactList}\small\item\em Pin 13 on Board = Pause/\+Play button. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_a21c436b4a2ae1a553916a9224fa61999}{camera.\+Button\+\_\+\+Vol\+Up}} = 15
+\begin{DoxyCompactList}\small\item\em Pin 15 on Board = Volume Up. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_aa4cf63e5b6146177346e8809b51578ab}{camera.\+Button\+\_\+\+Vol\+Down}} = 16
+\begin{DoxyCompactList}\small\item\em Pin 16 on Board = Volume Down. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_acb16260b9a198c54aa436c0273ac6377}{camera.\+Button\+\_\+\+Stop}} = 22
+\begin{DoxyCompactList}\small\item\em Pin 22 on Board = Stop process. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_a72ea0d6fb0682efb9112231dc44e9d38}{camera.\+Spd\+\_\+\+Change}} = 24
+\begin{DoxyCompactList}\small\item\em Pin 24 = Speed change. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_a3900b2c05ca0ee569341804bd45bc09e}{camera.\+lang\+\_\+index}} = 0
+\begin{DoxyCompactList}\small\item\em DEFINES THE CURRENT INDEX FOR LANGUAGE IN lang\+\_\+array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_ac00846c29e40631b664396739197100d}{camera.\+lang\+\_\+options}} = 3
+\begin{DoxyCompactList}\small\item\em DEFINES TOTAL NO. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_ae3cce9cf3106bea85744cc7fab098533}{camera.\+spd\+\_\+options}} = 3
+\begin{DoxyCompactList}\small\item\em DEFINES TOTAL NO. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacecamera_af0c0864dad97d4a08220e4694d656d8d}{camera.\+spd\+\_\+ind}} = 1
+\begin{DoxyCompactList}\small\item\em DEFINES CURRENT VALUE OF SPEED FROM spd\+\_\+arr. \end{DoxyCompactList}\item 
+list \mbox{\hyperlink{namespacecamera_ae5bfcaa0350a100ee96fa7d7e7f30851}{camera.\+spd\+\_\+arr}} = \mbox{[}0.\+7,1,1.\+3\mbox{]}
+\begin{DoxyCompactList}\small\item\em ARRAY THAt DEFINES SPEED CHANGE OPTIONS. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecamera_a9aa65597c9f0f1a290fffaf8ef1a5bcc}{camera.\+camera}} = Pi\+Camera()
+\begin{DoxyCompactList}\small\item\em Initalize the camera so that we can use it for picture taking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the script that serves as the driver for the full camera functionality as well as the picture-\/to-\/audio processing. 
+
+This is the script, uses functions from \mbox{\hyperlink{_c_v__algo_8py}{CV\+\_\+algo.\+py}} in order to provide the full device functionality. 
