@@ -39,7 +39,8 @@ For working directories we have the following included:
 This is the script that serves as the main driver for the rest of the functions and code. 
 This is the script, as well, that will be run off of boot as to not complicate any of the further process.
 """
-
+## @package driver
+# This namespace is used whenever referring to the driver script.
 
 ## @package RPi.GPIO 
 # Import Raspberry Pi GPIO library to be used to identify and use pins within Raspberry Pi
@@ -65,6 +66,4 @@ while True: # Run forever
     # When the button is pressed take a picture and call the comp vision algorithm to process it.
     if GPIO.input(Startup_Button) == True:
         GPIO.cleanup()
-        #subprocess.run('cvlc /home/pi/SoundBites/Device_ready.mp3', shell = True) #PLAY IN VLC
-        #subprocess.run('killall vlc', shell = True) #first terminate all vlc outputs
         subprocess.run("python3 camera.py", shell=True)

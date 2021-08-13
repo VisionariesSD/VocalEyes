@@ -2,7 +2,7 @@
 @file led.py
 
 @brief
-This is the script used during the testing phase of the VocalEyes product which involved using an led to check where the process is at the time.
+This is the code used during the testing phase of the VocalEyes product which involved using an led to check where the process is at the time.
 """
 
 ## @package RPi.GPIO 

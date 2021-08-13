@@ -1,33 +1,60 @@
 \hypertarget{_c_v__algo_8py}{}\doxysection{Software/\+CV\+\_\+algo.py File Reference}
 \label{_c_v__algo_8py}\index{Software/CV\_algo.py@{Software/CV\_algo.py}}
+
+
+This is the code used during the entire processing of the CV algorithm.  
+
+
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
  \mbox{\hyperlink{namespace_c_v__algo}{CV\+\_\+algo}}
-\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{_c_v__algo_8py}{CV\+\_\+algo.\+py}} script located within Software that is imported to allow use of its various functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{_c_v__algo_8py}{CV\+\_\+algo.\+py}} script located within Software that is imported to allow use of its various functions. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceconvert__to__speech}{convert\+\_\+to\+\_\+speech}}
+\begin{DoxyCompactList}\small\item\em This package is used for speech translation module through g\+TTS. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecv2}{cv2}}
+\begin{DoxyCompactList}\small\item\em This package is used for all image handling and image processing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepytesseract}{pytesseract}}
+\begin{DoxyCompactList}\small\item\em This package is used for the optical character recognition to retrieve text from a picture. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacesubprocess}{subprocess}}
+\begin{DoxyCompactList}\small\item\em subprocess package to be used to call the other main python script \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacetime}{time}}
+\begin{DoxyCompactList}\small\item\em This packaged is mostly used for button debouncing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegoogletrans}{googletrans}}
+\begin{DoxyCompactList}\small\item\em This package is ued for the translation functionality of the processing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceled}{led}}
+\begin{DoxyCompactList}\small\item\em This is the \mbox{\hyperlink{led_8py}{led.\+py}} script located within Software that was used for testing. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepygame}{pygame}}
+\begin{DoxyCompactList}\small\item\em This package is used to output audio cues for the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{namespace_c_v__algo_a5fd664d6d84fcc238678389abb765581}{CV\+\_\+algo.\+play\+Cue}} (fn)
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a3c2dad31a40e5beb7921ba1b33320c10}{CV\+\_\+algo.\+Play\+Pause}} (channel)
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_ad15e5e9919282c19006ef08e60cb5c01}{CV\+\_\+algo.\+Stop\+Playback}} (channel)
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a649f667b1319e4ccbf1a5aeed5c329ba}{CV\+\_\+algo.\+Volume\+Up}} (channel)
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a4120f64be118b3a4012777e8e286ef16}{CV\+\_\+algo.\+Volume\+Down}} (channel)
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a0223ed907a718f92e96cdb8fe58d5c92}{CV\+\_\+algo.\+Checkfor\+VLC}} ()
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a418bbbe31a93ab3ce90ac5188f796e78}{CV\+\_\+algo.\+Speed\+Change}} (x)
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a3d8fd39b1183a5980c9e4d3c743542c0}{CV\+\_\+algo.\+End\+Output}} ()
-\item 
-def \mbox{\hyperlink{namespace_c_v__algo_a20a1cfe22b3f665339d471202a39709c}{CV\+\_\+algo.\+CV}} (l)
-\end{DoxyCompactItemize}
+def \mbox{\hyperlink{namespace_c_v__algo_a5fd664d6d84fcc238678389abb765581_a5fd664d6d84fcc238678389abb765581}{CV\+\_\+algo.\+play\+Cue}} (fn)
+\begin{DoxyCompactList}\small\item\em Function to play audio cues for button presses. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a3c2dad31a40e5beb7921ba1b33320c10_a3c2dad31a40e5beb7921ba1b33320c10}{CV\+\_\+algo.\+Play\+Pause}} (channel)
+\begin{DoxyCompactList}\small\item\em Function to pause audio on button press. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_ad15e5e9919282c19006ef08e60cb5c01_ad15e5e9919282c19006ef08e60cb5c01}{CV\+\_\+algo.\+Stop\+Playback}} (channel)
+\begin{DoxyCompactList}\small\item\em Function to stop all audio on button press. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a649f667b1319e4ccbf1a5aeed5c329ba_a649f667b1319e4ccbf1a5aeed5c329ba}{CV\+\_\+algo.\+Volume\+Up}} (channel)
+\begin{DoxyCompactList}\small\item\em Function to increase volume on button press. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a4120f64be118b3a4012777e8e286ef16_a4120f64be118b3a4012777e8e286ef16}{CV\+\_\+algo.\+Volume\+Down}} (channel)
+\begin{DoxyCompactList}\small\item\em Function to decrease volume on button press. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a0223ed907a718f92e96cdb8fe58d5c92_a0223ed907a718f92e96cdb8fe58d5c92}{CV\+\_\+algo.\+Checkfor\+VLC}} ()
+\begin{DoxyCompactList}\small\item\em Function to check if VLC process is running\+: (Used in Spd\+\_\+\+Change and End\+Output functions) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a418bbbe31a93ab3ce90ac5188f796e78_a418bbbe31a93ab3ce90ac5188f796e78}{CV\+\_\+algo.\+Speed\+Change}} (x)
+\begin{DoxyCompactList}\small\item\em Function to change speed on button press. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a3d8fd39b1183a5980c9e4d3c743542c0_a3d8fd39b1183a5980c9e4d3c743542c0}{CV\+\_\+algo.\+End\+Output}} ()
+\begin{DoxyCompactList}\small\item\em Function to end all VLC output. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_c_v__algo_a20a1cfe22b3f665339d471202a39709c_a20a1cfe22b3f665339d471202a39709c}{CV\+\_\+algo.\+CV}} (l)
+\begin{DoxyCompactList}\small\item\em Function that serves as the main CV algorithm as well as the picture-\/to-\/audio processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-list \mbox{\hyperlink{namespace_c_v__algo_aa4556848d4cb0079e0d450cbb43bd18e}{CV\+\_\+algo.\+languages}} = \mbox{[}\textquotesingle{}en\textquotesingle{}, \textquotesingle{}hi\textquotesingle{}, \textquotesingle{}te\textquotesingle{}\mbox{]}
-\end{DoxyCompactItemize}
+list \mbox{\hyperlink{namespace_c_v__algo_aa4556848d4cb0079e0d450cbb43bd18e_aa4556848d4cb0079e0d450cbb43bd18e}{CV\+\_\+algo.\+languages}} = \mbox{[}\textquotesingle{}en\textquotesingle{}, \textquotesingle{}hi\textquotesingle{}, \textquotesingle{}te\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em This is the languages array that is used for language translation and selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the code used during the entire processing of the CV algorithm. 
+
+This is the main section of code that handles all image, translation, and audio processing for the device. 

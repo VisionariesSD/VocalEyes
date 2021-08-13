@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['gpio_59',['GPIO',['../namespace_r_pi_1_1_g_p_i_o.html',1,'RPi']]]
+  ['picamera_67',['picamera',['../namespacepicamera.html',1,'']]],
+  ['pygame_68',['pygame',['../namespacepygame.html',1,'']]],
+  ['pytesseract_69',['pytesseract',['../namespacepytesseract.html',1,'']]]
 ];

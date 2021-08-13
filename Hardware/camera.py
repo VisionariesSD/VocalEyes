@@ -5,6 +5,9 @@
 This is the script that serves as the driver for the full camera functionality as well as the picture-to-audio processing.
 This is the script, uses functions from CV_algo.py in order to provide the full device functionality.
 """
+## @package camera
+# This namespace is used whenever referring to the camera module.
+
 ## @package picamera
 # this package is used to startup the camera from code
 from picamera import PiCamera
