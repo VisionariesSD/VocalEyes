@@ -1,1 +1,8 @@
-VocalEyes will be a device/wearable that will include a camera and a speaker module. The major goal of the VocalEyes is to help the visually impaired. The visual eyes will recognize an object that the user directsit at (via the camera module) and will output audio information (via the speaker module) about what the object is. (eg: in case of text it will readout the text).
+To review documentation for the project please do the following:
+
+VocalEyes ->
+Documentation ->
+html ->
+open the index.html file WITHIN ITS CURRENT DIRECTORY
+
+Removal of the index.html file from its current directory will cause the documentation to become unsatisfactory.
