@@ -1,6 +1,7 @@
 To review documentation for the project please do the following:
 
 Download/git clone the project ->
+Unzip the file ->
 VocalEyes ->
 Documentation ->
 html ->
