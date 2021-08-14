@@ -23,15 +23,20 @@ For working directories we have the following included:
 - Software: This folder provides all files necessary regarding to software functionality
     - convert_to_speech.py
     - CV_algo.py
-- Sound Files: This includes all Sound Files that are used within this project
-    - Device_ready.mp3 @file Device_ready.mp3 @brief This tells that the device is ready and is used during startup.
-    - lang_change.mp3 @file lang_change.mp3 @brief This tells that the user has changed languages.
-    - No_VLC.mp3 @file No_VLC.mp3 @brief This tells the user that there is no VLC detected at that there is no audio currently being output.
-    - Picture_captured.mp3 @file Picture_captured.mp3 @brief This tells the user that they have captured a picture.
-    - speech_output.mp3 @file speech_output.mp3 @brief This is the file that is used for the speech output from the input picture.
-    - Stopped.mp3 @file Stopped.mp3 @brief This tells the user that the audio is stopped and that they must take another picture to continue.
+- SoundBites: This includes all Sound Files that are used within this project
+    - Device_ready.mp3 
+    - lang_change.mp3 
+    - No_VLC.mp3 
+    - Picture_captured.mp3 
+    - speech_output.mp3 
+    - Stopped.mp3 
 
-
+@file Device_ready.mp3 @brief This tells that the device is ready and is used during startup.
+@file lang_change.mp3 @brief This tells that the user has changed languages.
+@file No_VLC.mp3 @brief This tells the user that there is no VLC detected at that there is no audio currently being output.
+@file Picture_captured.mp3 @brief This tells the user that they have captured a picture.
+@file speech_output.mp3 @brief This is the file that is used for the speech output from the input picture.
+@file Stopped.mp3 @brief This tells the user that the audio is stopped and that they must take another picture to continue.
 
 @file driver.py
 
